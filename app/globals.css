@@ -152,6 +152,7 @@ button { cursor: pointer; }
 .store-copy h3 { font-family:"Cormorant Garamond",serif; font-size:30px; margin:0 0 12px; }
 .store-copy address { font-style:normal; font-family:"Cormorant Garamond",serif; font-size:22px; line-height:1.35; }
 .store-actions { display:flex; flex-wrap:wrap; gap:9px; margin-top:25px; }
+.store-actions .button { min-width:150px; }
 
 .contact-section { background:#fff; }
 .contact-grid { display:grid; grid-template-columns:.9fr 1.1fr; gap:80px; align-items:start; }

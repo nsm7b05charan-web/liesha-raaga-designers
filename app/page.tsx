@@ -10,16 +10,19 @@ import {
   MapPin,
   Menu,
   Phone,
+  MessageCircle,
   Scissors,
   Sparkles,
   X,
 } from "lucide-react";
 import { supabaseBrowser } from "../lib/supabase-browser";
 
-const mapsUrl =
-  "https://www.google.com/maps/search/?api=1&query=5%2F61%2F2B%2C%20One%20Town%2C%20Vijayawada%2C%20Andhra%20Pradesh%2C%20India";
-const instagramUrl = "https://www.instagram.com/aliesha_raaga_designers/";
-const phoneUrl = "tel:+919849506512";
+const mapsUrl = "https://share.google/79mO1y7vzqfq4dhc7";
+const instagramUrl = "https://www.instagram.com/liesha_raaga_designers?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==";
+const phonePrimaryUrl = "tel:+919849506512";
+const phoneSecondaryUrl = "tel:+919246464621";
+const whatsappPrimaryUrl = "https://wa.me/919849506512";
+const whatsappSecondaryUrl = "https://wa.me/919246464621";
 
 const images = {
   hero:
@@ -39,14 +42,16 @@ const images = {
 };
 
 const services = [
-  ["Customized Blouses", "Thoughtful silhouettes and details shaped around your preferred fit and style.", images.blouse],
-  ["Sarees", "Elegant saree styling and coordinated looks for everyday and special occasions.", images.saree],
-  ["Lehengas", "Personalized lehenga concepts with attention to colour, fabric and finishing.", images.lehenga],
-  ["Kurtis", "Comfortable, graceful kurti styles tailored to your preferences.", images.kurti],
-  ["Ethnic Wear", "Curated traditional looks with a refined contemporary touch.", images.saree],
-  ["Bridal & Occasion Wear", "Special-occasion designs planned around your celebration and personal taste.", images.bridal],
-  ["Personalized Styling", "Discuss the overall look, from silhouette and palette to finishing details.", images.dupatta ?? images.dupatta],
-  ["Customized Designs", "Bring your ideas together with a design conversation made around you.", images.hero],
+  ["Computer Work", "Computer-assisted fashion and design work prepared with care and attention to detail.", images.blouse],
+  ["Maggam Work", "Decorative maggam embroidery work for blouses and special-occasion outfits.", images.lehenga],
+  ["Fabric Painting", "Hand-finished fabric painting to add an artistic personal touch to your outfit.", images.saree],
+  ["Sticker Printing on Fabric", "Custom sticker printing on fabric for distinctive, personalized designs.", images.dupatta],
+  ["Dress Stitching", "Dress stitching shaped around your preferred fit, style and occasion.", images.kurti],
+  ["Customized Outfits", "Personalized outfits created around your design, colour, fabric and fit preferences.", images.hero],
+  ["Bridal Customisation", "Customized bridal outfits with details planned around your celebration and style.", images.bridal],
+  ["Kurtis", "Graceful kurti styles for everyday wear and occasions, tailored to your preferences.", images.kurti],
+  ["Fabrics", "A selection of fabrics to help bring your preferred outfit design together.", images.saree],
+  ["Stretchable Blouses", "Our special stretchable blouse designs, made for a flexible and comfortable fit.", images.blouse],
 ] as const;
 
 const collection = [
@@ -296,7 +301,7 @@ export default function Home() {
             <SectionHeading script="Visit Our Store" kicker="COME SAY HELLO" align="left" />
             <h3>Liesha Raaga Designers</h3>
             <address>
-              5/61/2B, One Town,<br />
+              9/61/2B, One Town,<br />
               Vijayawada,<br />
               Andhra Pradesh, India
             </address>
@@ -304,11 +309,17 @@ export default function Home() {
               <a className="button primary" href={mapsUrl} target="_blank" rel="noreferrer">
                 <MapPin size={16} /> Get Directions
               </a>
-              <a className="button secondary" href={phoneUrl}>
+              <a className="button secondary" href={phonePrimaryUrl}>
                 <Phone size={16} /> Call Now
               </a>
               <a className="button ghost" href={instagramUrl} target="_blank" rel="noreferrer">
                 <Instagram size={16} /> Instagram
+              </a>
+              <a className="button ghost" href={whatsappPrimaryUrl} target="_blank" rel="noreferrer">
+                <MessageCircle size={16} /> WhatsApp 9849506512
+              </a>
+              <a className="button ghost" href={whatsappSecondaryUrl} target="_blank" rel="noreferrer">
+                <MessageCircle size={16} /> WhatsApp 9246464621
               </a>
             </div>
           </div>
@@ -324,9 +335,11 @@ export default function Home() {
               Send a simple enquiry and the store can get in touch with you.
             </p>
             <div className="contact-details">
-              <a href={phoneUrl}><Phone size={17} /> 9849506512</a>
-              <a href={instagramUrl} target="_blank" rel="noreferrer"><Instagram size={17} /> @aliesha_raaga_designers</a>
-              <a href={mapsUrl} target="_blank" rel="noreferrer"><MapPin size={17} /> 5/61/2B, One Town, Vijayawada</a>
+              <a href={phonePrimaryUrl}><Phone size={17} /> 9849506512</a>
+              <a href={phoneSecondaryUrl}><Phone size={17} /> 9246464621</a>
+              <a href={instagramUrl} target="_blank" rel="noreferrer"><Instagram size={17} /> @liesha_raaga_designers</a>
+              <a href={whatsappPrimaryUrl} target="_blank" rel="noreferrer"><MessageCircle size={17} /> Connect on WhatsApp</a>
+              <a href={mapsUrl} target="_blank" rel="noreferrer"><MapPin size={17} /> 9/61/2B, One Town, Vijayawada</a>
             </div>
           </div>
 
@@ -362,7 +375,7 @@ export default function Home() {
 
       <section className="section instagram-section">
         <div className="container">
-          <SectionHeading script="Follow Our Designs" kicker="@ALIESHA_RAAGA_DESIGNERS" />
+          <SectionHeading script="Follow Our Designs" kicker="@LIESHA_RAAGA_DESIGNERS" />
           <div className="insta-grid">
             {[images.saree, images.blouse, images.lehenga, images.dupatta ?? images.dupatta].map((image, i) => (
               <a key={i} href={instagramUrl} target="_blank" rel="noreferrer" className="insta-tile">
@@ -397,9 +410,12 @@ export default function Home() {
           </div>
           <div>
             <h4>Visit</h4>
-            <span>5/61/2B, One Town,<br />Vijayawada,<br />Andhra Pradesh, India</span>
-            <a href={phoneUrl}>9849506512</a>
-            <a href={instagramUrl} target="_blank" rel="noreferrer">@aliesha_raaga_designers</a>
+            <span>9/61/2B, One Town,<br />Vijayawada,<br />Andhra Pradesh, India</span>
+            <a href={phonePrimaryUrl}>9849506512</a>
+            <a href={phoneSecondaryUrl}>9246464621</a>
+            <a href={instagramUrl} target="_blank" rel="noreferrer">@liesha_raaga_designers</a>
+            <a href={whatsappPrimaryUrl} target="_blank" rel="noreferrer">WhatsApp · 9849506512</a>
+            <a href={whatsappSecondaryUrl} target="_blank" rel="noreferrer">WhatsApp · 9246464621</a>
           </div>
         </div>
         <div className="footer-bottom">
