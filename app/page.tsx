@@ -26,32 +26,42 @@ const whatsappSecondaryUrl = "https://wa.me/919246464621";
 
 const images = {
   hero:
-    "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1400&q=82",
+    "https://sangamplaza.com/cdn/shop/files/93042-min.jpg?v=1720350848&width=1600",
   saree:
-    "https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=900&q=78",
+    "https://i.pinimg.com/736x/ab/9c/79/ab9c795dc932c59443c4d063492670f4.jpg",
   lehenga:
-    "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=78",
+    "https://static.wixstatic.com/media/edc4e3_8db63432704d4bc584faa9894c5bcc57~mv2.jpg/v1/fill/w_480%2Ch_600%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/designer-wear-bridal-lehenga-in-kolkata.jpg",
   blouse:
-    "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=900&q=78",
+    "https://i.pinimg.com/736x/03/ea/1f/03ea1ffb35be646f854ad682c2c63acc.jpg",
   kurti:
-    "https://images.unsplash.com/photo-1583391733981-849840f2e5c7?auto=format&fit=crop&w=900&q=78",
+    "https://www.sareespalace.com/image/cache/data/designer-kurti-for-festival-258075-1000x1375.jpg",
   dupatta:
-    "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=900&q=78",
+    "https://i.pinimg.com/736x/fa/28/0f/fa280f429f419e04affb02e8b9500f61.jpg",
   bridal:
-    "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=78",
+    "https://static.wixstatic.com/media/edc4e3_8db63432704d4bc584faa9894c5bcc57~mv2.jpg/v1/fill/w_480%2Ch_600%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/designer-wear-bridal-lehenga-in-kolkata.jpg",
+  computer:
+    "https://www.difd.in/web/image/391-6d03fe90/Dependability.jpg",
+  sticker:
+    "https://www.inxinternational.com/sites/default/files/images/OG/TextilePrinting_blogOG_1200x627.jpg",
+  stitching:
+    "https://shufflingsuitcases.com/cdn/shop/files/IMG_0074_09069611-368c-4c0a-af11-9a08346a1285.jpg?v=1741697862&width=1500",
+  fabrics:
+    "https://i.pinimg.com/474x/1e/13/54/1e13546742772ee306421f370f0af9cf.jpg",
+  stretch:
+    "https://uruhandloom.com/cdn/shop/files/71M5tVxkR-L._SL1500.jpg?v=1764528412&width=2048",
 };
 
 const services = [
-  ["Computer Work", "Computer-assisted fashion and design work prepared with care and attention to detail.", images.blouse],
-  ["Maggam Work", "Decorative maggam embroidery work for blouses and special-occasion outfits.", images.lehenga],
-  ["Fabric Painting", "Hand-finished fabric painting to add an artistic personal touch to your outfit.", images.saree],
-  ["Sticker Printing on Fabric", "Custom sticker printing on fabric for distinctive, personalized designs.", images.dupatta],
-  ["Dress Stitching", "Dress stitching shaped around your preferred fit, style and occasion.", images.kurti],
+  ["Computer Work", "Computer-assisted fashion and design work prepared with care and attention to detail.", images.computer],
+  ["Maggam Work", "Decorative maggam embroidery work for blouses and special-occasion outfits.", images.blouse],
+  ["Fabric Painting", "Hand-finished fabric painting to add an artistic personal touch to your outfit.", images.dupatta],
+  ["Sticker Printing on Fabric", "Custom sticker printing on fabric for distinctive, personalized designs.", images.sticker],
+  ["Dress Stitching", "Dress stitching shaped around your preferred fit, style and occasion.", images.stitching],
   ["Customized Outfits", "Personalized outfits created around your design, colour, fabric and fit preferences.", images.hero],
   ["Bridal Customisation", "Customized bridal outfits with details planned around your celebration and style.", images.bridal],
   ["Kurtis", "Graceful kurti styles for everyday wear and occasions, tailored to your preferences.", images.kurti],
-  ["Fabrics", "A selection of fabrics to help bring your preferred outfit design together.", images.saree],
-  ["Stretchable Blouses", "Our special stretchable blouse designs, made for a flexible and comfortable fit.", images.blouse],
+  ["Fabrics", "A selection of fabrics to help bring your preferred outfit design together.", images.fabrics],
+  ["Stretchable Blouses", "Our special stretchable blouse designs, made for a flexible and comfortable fit.", images.stretch],
 ] as const;
 
 const collection = [
