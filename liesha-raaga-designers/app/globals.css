@@ -58,8 +58,14 @@ button { cursor: pointer; }
     radial-gradient(circle at 22% 35%, rgba(244,200,209,.7), transparent 28%),
     radial-gradient(circle at 73% 46%, rgba(248,221,226,.9), transparent 35%),
     linear-gradient(115deg, #fff9f7 0%, #fae7ea 52%, #fff9f7 100%);
+  background-size: 150% 150%;
+  animation: heroBackground 18s ease-in-out infinite alternate;
 }
-.hero-wash { position:absolute; inset:0; background:radial-gradient(ellipse at 50% 50%, rgba(255,255,255,.55), transparent 55%); }
+.hero-wash { position:absolute; inset:0; background:radial-gradient(ellipse at 50% 50%, rgba(255,255,255,.55), transparent 55%); pointer-events:none; overflow:hidden; }
+.hero-wash::before,
+.hero-wash::after { content:""; position:absolute; border-radius:50%; filter:blur(8px); pointer-events:none; }
+.hero-wash::before { width:260px; height:260px; left:5%; top:18%; background:rgba(244,200,209,.22); animation:floatBlush 11s ease-in-out infinite; }
+.hero-wash::after { width:340px; height:340px; right:7%; bottom:-8%; background:rgba(248,221,226,.28); animation:floatBlush 14s ease-in-out infinite reverse; }
 .hero-grid { position:relative; z-index:2; display:grid; grid-template-columns:1.03fr .97fr; align-items:center; gap:35px; padding:70px 0 55px; }
 .eyebrow { font-size:11px; letter-spacing:.24em; color:#a88780; margin:0 0 20px; }
 .hero-copy h1 { margin:0; font-family:"Allura", cursive; font-size:clamp(74px,8.5vw,126px); letter-spacing:-.015em; font-weight:400; color:var(--terracotta); line-height:.83; }
