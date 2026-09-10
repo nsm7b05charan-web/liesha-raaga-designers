@@ -224,20 +224,7 @@ button { cursor: pointer; }
 .floral-corner::before,
 .floral-corner::after { content:none; }
 
-.qr-frame {
-  width:138px;
-  height:138px;
-  padding:7px;
-  background:#fff;
-  border:1px solid rgba(155,79,70,.16);
-  box-shadow:0 12px 30px rgba(96,53,47,.09);
-}
-.qr-frame img { width:100%; height:100%; object-fit:cover; }
-.map-inner a {
-  display:inline-flex;
-  align-items:center;
-  gap:5px;
-}
+
 
 @media (max-width: 1050px) {
   .nav-links { gap:16px; }
@@ -317,3 +304,5 @@ button { cursor: pointer; }
   .footer-bottom { flex-direction:column; }
   .floral-corner { transform:scale(.75); transform-origin:top left; }
 }
+.store-pin { width:72px; height:72px; display:grid; place-items:center; border-radius:50%; background:rgba(199,123,120,.12); color:var(--terracotta); border:1px solid rgba(155,79,70,.12); margin-bottom:8px; }
+.map-inner p { margin:3px 0 2px; font-family:"Cormorant Garamond",serif; font-size:18px; color:#80615b; }

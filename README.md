@@ -34,5 +34,5 @@ npm install
 npm run dev
 ```
 
-\n## Business-card reference\nThe supplied Liesha Raaga Designers card is used as the primary visual reference. Its floral corner artwork and location QR are included as brand-reference assets.\n
+\n## Business-card reference\nThe supplied Liesha Raaga Designers card is used as the primary visual reference. Its floral corner artwork and Google Maps location card are included as brand-reference assets.\n
 WhatsApp links are provided for both store numbers: 9849506512 and 9246464621.

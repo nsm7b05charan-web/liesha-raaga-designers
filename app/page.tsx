@@ -25,22 +25,24 @@ const whatsappPrimaryUrl = "https://wa.me/919849506512";
 const whatsappSecondaryUrl = "https://wa.me/919246464621";
 
 const images = {
+  // Product-focused imagery only. No real people/models are used on the site.
   hero:
-    "https://sangamplaza.com/cdn/shop/files/93042-min.jpg?v=1720350848&width=1600",
+    "https://cdn.shopify.com/s/files/1/1452/8632/files/now-wow-bluza-tip-ie-alba-cubroderi-florala-bumbac-2.jpg?v=1775572957",
   saree:
-    "https://i.pinimg.com/736x/ab/9c/79/ab9c795dc932c59443c4d063492670f4.jpg",
+    "https://kuberansilks.com/cdn/shop/files/flat-lay-royal-blue-sunlight-overhead.png?v=1777298576&width=720",
   lehenga:
-    "https://static.wixstatic.com/media/edc4e3_8db63432704d4bc584faa9894c5bcc57~mv2.jpg/v1/fill/w_480%2Ch_600%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/designer-wear-bridal-lehenga-in-kolkata.jpg",
+    "https://ahesas.com/cdn/shop/files/photo_2026-01-05_08-47-21.jpg?v=1767944452&width=960",
   blouse:
-    "https://i.pinimg.com/736x/03/ea/1f/03ea1ffb35be646f854ad682c2c63acc.jpg",
+    "https://cdn.shopify.com/s/files/1/1452/8632/files/now-wow-bluza-tip-ie-alba-cubroderi-florala-bumbac-2.jpg?v=1775572957",
   kurti:
-    "https://www.sareespalace.com/image/cache/data/designer-kurti-for-festival-258075-1000x1375.jpg",
+    "https://www.houseofisa.co.in/cdn/shop/files/IMG20260315123730_eca23d63-0243-4306-9879-07dd6cc03a0a.jpg?v=1775217224&width=1445",
   dupatta:
     "https://i.pinimg.com/736x/fa/28/0f/fa280f429f419e04affb02e8b9500f61.jpg",
   bridal:
-    "https://static.wixstatic.com/media/edc4e3_8db63432704d4bc584faa9894c5bcc57~mv2.jpg/v1/fill/w_480%2Ch_600%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/designer-wear-bridal-lehenga-in-kolkata.jpg",
+    "https://clothsvilla.com/cdn/shop/files/white-designer-fox-georgette-semi-stitched-lehengha-set-with-sequin-thread-work_3_1024x1024.jpg?v=1747894089",
+  // Computer Work means computerised embroidery-machine work.
   computer:
-    "https://www.difd.in/web/image/391-6d03fe90/Dependability.jpg",
+    "https://cdn11.bigcommerce.com/s-pmiia69/images/stencil/1030x1030/products/655/3911/Janome9850-3__41345.1615428282.jpg?c=2",
   sticker:
     "https://www.inxinternational.com/sites/default/files/images/OG/TextilePrinting_blogOG_1200x627.jpg",
   stitching:
@@ -48,11 +50,11 @@ const images = {
   fabrics:
     "https://i.pinimg.com/474x/1e/13/54/1e13546742772ee306421f370f0af9cf.jpg",
   stretch:
-    "https://uruhandloom.com/cdn/shop/files/71M5tVxkR-L._SL1500.jpg?v=1764528412&width=2048",
+    "https://www.swakalp.com/cdn/shop/files/IMG_20251114_152126.jpg?v=1763114839&width=1445",
 };
 
 const services = [
-  ["Computer Work", "Computer-assisted fashion and design work prepared with care and attention to detail.", images.computer],
+  ["Computerised Embroidery Work", "Computerised embroidery-machine work with precise stitching and detailed patterns.", images.computer],
   ["Maggam Work", "Decorative maggam embroidery work for blouses and special-occasion outfits.", images.blouse],
   ["Fabric Painting", "Hand-finished fabric painting to add an artistic personal touch to your outfit.", images.dupatta],
   ["Sticker Printing on Fabric", "Custom sticker printing on fabric for distinctive, personalized designs.", images.sticker],
@@ -61,7 +63,7 @@ const services = [
   ["Bridal Customisation", "Customized bridal outfits with details planned around your celebration and style.", images.bridal],
   ["Kurtis", "Graceful kurti styles for everyday wear and occasions, tailored to your preferences.", images.kurti],
   ["Fabrics", "A selection of fabrics to help bring your preferred outfit design together.", images.fabrics],
-  ["Stretchable Blouses", "Our special stretchable blouse designs, made for a flexible and comfortable fit.", images.stretch],
+  ["Stretchable Blouses", "Special stretchable blouse designs focused on flexible fit and comfortable wear.", images.stretch],
 ] as const;
 
 const collection = [
@@ -297,11 +299,10 @@ export default function Home() {
         <div className="container store-grid">
           <div className="store-map">
             <div className="map-inner">
-              <div className="qr-frame">
-                <img src="/location-qr.png" alt="Location QR code from the Liesha Raaga Designers business card" />
-              </div>
-              <span>SCAN FOR LOCATION</span>
+              <div className="store-pin"><MapPin size={34} /></div>
+              <span>FIND US IN VIJAYAWADA</span>
               <strong>One Town · Vijayawada</strong>
+              <p>9/61/2B, One Town, Vijayawada</p>
               <a href={mapsUrl} target="_blank" rel="noreferrer">
                 <MapPin size={14} /> Open in Google Maps
               </a>
