@@ -80,7 +80,6 @@ button { cursor: pointer; }
 .hero-photo { position:absolute; inset:28px 72px 20px 32px; border-radius:170px 170px 28px 28px; overflow:hidden; background:#ead5cf; border:9px solid rgba(255,249,247,.9); box-shadow:0 28px 70px rgba(96,53,47,.16); transform:none; z-index:1; }
 .hero-photo::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(255,249,247,.04), rgba(96,53,47,.05)); pointer-events:none; }
 .hero-photo img { width:100%; height:100%; object-fit:cover; object-position:center center; display:block; }
-.hero-photo { background:#ead5cf; }
 .hero-script-note { position:absolute; right:0; bottom:28px; display:flex; flex-direction:column; align-items:center; font-family:"Allura", cursive; color:var(--terracotta); font-size:52px; line-height:.76; transform:rotate(-5deg); z-index:2; text-shadow:0 2px 12px rgba(255,249,247,.9); }
 .hero-script-note small { font-size:42px; margin-top:14px; }
 
